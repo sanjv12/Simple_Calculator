@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FD Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+       
+</head>
+<body>
+    <div>
+        <div class="calculator">
+            <div class="displaybox">
+                <input class="displaytx" id="displaytx" placeholder="00" type="text" style="text-align: right;" readonly>
+            </div>
+            <div class="keypad">
+                <div class="numbers">
+                    <button id="allclearbtn" class="numbtn" onclick="allclear()">AC</button>
+                    <button id="clearbtn" class="numbtn" onclick="clear()">C</button>
+                    <button id="power" class="numbtn" onclick="calldisplay('.')">^</button>        
+                    <button id="number9" class="numbtn" onclick="calldisplay('7')">7</button>        
+                    <button id="number8" class="numbtn" onclick="calldisplay('8')">8</button>        
+                    <button id="number7" class="numbtn" onclick="calldisplay('9')">9</button>        
+                    <button id="number6" class="numbtn" onclick="calldisplay('4')">4</button>        
+                    <button id="number5" class="numbtn" onclick="calldisplay('5')">5</button>        
+                    <button id="number4" class="numbtn" onclick="calldisplay('6')">6</button>        
+                    <button id="number3" class="numbtn" onclick="calldisplay('1')">1</button>        
+                    <button id="number2" class="numbtn" onclick="calldisplay('2')">2</button>        
+                    <button id="number1" class="numbtn" onclick="calldisplay('3')">3</button>
+                    <button id="openbrace" class="numbtn" onclick="calldisplay('(')">(</button>        
+                    <button id="closedbrace" class="numbtn" onclick="calldisplay(')')">)</button>        
+                    <button id="number0" class="numbtn" onclick="calldisplay('0')">0</button>
+                </div>        
+                <div class="operators">
+                    <button id="opr/" class="numbtn" onclick="calldisplay('/')">/</button>        
+                    <button id="opr*" class="numbtn" onclick="calldisplay('*')">*</button>
+                    <button id="opr-" class="numbtn" onclick="calldisplay('-')">-</button>        
+                    <button id="opr+" class="numbtn" onclick="calldisplay('+')">+</button>        
+                    <button id="opr=" class="numbtn" onclick="calculate()">=</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>
